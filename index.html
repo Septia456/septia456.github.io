@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Septia Nenengsih — Portofolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Septia Nenengsih — Informatics student at Universitas Ahmad Dahlan, writer, MC, reciter and education ambassador."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?v=5" />
+  </head>
+  <body>
+    <!-- Icon sprite -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4.2" />
+          <circle cx="17.3" cy="6.7" r="0.6" fill="currentColor" />
+        </symbol>
+        <symbol id="i-tiktok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5" />
+          <path d="M14 3c.4 2.6 2.1 4.3 5 4.5" />
+        </symbol>
+        <symbol id="i-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+        </symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <path d="m3.5 7 8.5 6 8.5-6" />
+        </symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z" />
+          <circle cx="12" cy="9.5" r="2.5" />
+        </symbol>
+        <symbol id="i-arrow" viewBox="0 0 64 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1 6h61M56 1l6 5-6 5" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="nav" id="top-nav">
+      <div class="nav-inner">
+        <a href="#home" class="nav-brand">Septia N.</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+        <nav>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#about" data-section="about">About Me</a></li>
+            <li><a href="#education" data-section="education">Education</a></li>
+            <li><a href="#achievements" data-section="achievements">Achievements</a></li>
+            <li><a href="#organization" data-section="organization">Organization</a></li>
+            <li><a href="#social" data-section="social">Social Media</a></li>
+            <li><a href="#gallery" data-section="gallery">Gallery</a></li>
+            <li><a href="#contact" data-section="contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <div class="stage stage-dark">
+        <section class="slide hero" id="home">
+          <div class="hero-strip">
+            <figure><img src="asset/photo/port-mc.jpg" alt="Septia as a Master of Ceremony" style="object-position: 50% 8%" /></figure>
+            <figure><img src="asset/photo/traditional-attire.jpg" alt="Septia in traditional attire with friends" style="object-position: 40% 35%" /></figure>
+            <figure><img src="asset/photo/duta-muslimah.jpg" alt="Septia wearing a Duta Muslimah Hijab sash" style="object-position: 50% 14%" /></figure>
+            <figure><img src="asset/photo/port-tilawah.jpg" alt="Septia holding a tilawah certificate" style="object-position: 50% 48%" /></figure>
+          </div>
+          <div class="hero-body">
+            <h1 class="display hero-title">Portofolio</h1>
+            <div class="hero-meta">
+              <h2>SEPTIA NENENGSIH</h2>
+              <p>INFORMATICS STUDENT · WRITER · MC</p>
+              <a class="pill pill-lg" href="#about">
+                Take a look at my journey
+              </a>
+              <svg class="hero-arrow" aria-hidden="true"><use href="#i-arrow" /></svg>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="stage stage-light">
+        <!-- ================= ABOUT ================= -->
+        <section class="slide about reveal" id="about">
+          <div class="about-photo">
+            <img src="asset/photo/duta-edukasi.jpg" alt="Septia wearing a Duta Edukasi Indonesia sash" style="object-position: 62% 30%" />
+          </div>
+          <div class="about-copy">
+            <h2 class="display">About Me</h2>
+            <p>
+              Hi, I'm Septia Nenengsih — an Informatics student at Universitas
+              Ahmad Dahlan from Bima, West Nusa Tenggara. I'm passionate about
+              technology and solving problems with digital solutions, and I'm
+              always learning and growing in programming, data analysis and
+              technological innovation.
+            </p>
+            <p>
+              Beyond the screen, I write essays and poetry, recite the Qur'an,
+              host events as an MC and report as a journalist for UAD's Public
+              Relations &amp; Protocol office. I like to work in a team and
+              strive to contribute to the world of technology.
+            </p>
+            <ol class="facts">
+              <li>Informatics · Faculty of Industrial Technology, UAD (class of 2023)</li>
+              <li>Journalist · Humas &amp; Protokol UAD</li>
+              <li>Ambassador · Duta Muslimah Hijab &amp; Duta Edukasi Indonesia (NTB)</li>
+              <li>Writer · national essay winner and selected poetry author</li>
+            </ol>
+            <div class="social-row">
+              <a href="https://www.instagram.com/septia_q2/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-instagram" /></svg></a>
+              <a href="https://www.tiktok.com/@ceptiiiii7" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#i-tiktok" /></svg></a>
+              <a href="https://www.facebook.com/septiai.ruslin" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-facebook" /></svg></a>
+              <a href="mailto:septianenengsih63@gmail.com" aria-label="Email"><svg><use href="#i-mail" /></svg></a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= EDUCATION + TRAINING ================= -->
+        <section class="slide duo reveal" id="education">
+          <div class="duo-cell duo-photo">
+            <img src="asset/photo/gerak-jalan.jpg" alt="Septia with classmates in scout uniforms at Gerak Jalan Indah 2022" style="object-position: 50% 6%" />
+          </div>
+          <div class="duo-cell duo-text">
+            <h2 class="display">Education</h2>
+            <ul class="timeline">
+              <li>
+                <strong>2023 – now</strong>
+                <span>Universitas Ahmad Dahlan<br />Informatics, Faculty of Industrial Technology</span>
+              </li>
+              <li>
+                <strong>2020 – 2023</strong>
+                <span>SMA Negeri 1 Donggo</span>
+              </li>
+              <li>
+                <strong>2017 – 2020</strong>
+                <span>SMP Negeri 1 Donggo</span>
+              </li>
+              <li>
+                <strong>until 2017</strong>
+                <span>SD Negeri Inpres O,o</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="duo-cell duo-text duo-text-alt">
+            <h2 class="display">Training</h2>
+            <ul class="timeline">
+              <li><strong>Jun 2025</strong><span>Photography training · UKM Lensa UAD</span></li>
+              <li><strong>Feb 2025</strong><span>Creative video training · BIMAWA UAD</span></li>
+              <li><strong>Jun 2024</strong><span>Adobe Photoshop design training · BEM FSBK UHAMKA</span></li>
+              <li><strong>Apr 2024</strong><span>Upgrading Ormawa FTI · BEM FTI UAD</span></li>
+              <li><strong>Jan 2024</strong><span>Soft skill training · Universitas Ahmad Dahlan</span></li>
+              <li><strong>Oct 2023</strong><span>PARADOKS, basic informatics organization training · HMIF UAD</span></li>
+            </ul>
+          </div>
+          <div class="duo-cell duo-photo">
+            <img src="asset/photo/spiritual-camp.jpg" alt="Septia and friends at the SMAN 1 Donggo Spiritual Camp 2022" style="object-position: 50% 50%" />
+          </div>
+        </section>
+
+        <!-- ================= MOTTO ================= -->
+        <section class="slide motto reveal" id="motto">
+          <figure class="motto-frame">
+            <img src="asset/photo/motto-portrait.jpg" alt="Portrait of Septia in a green kebaya and sash" style="object-position: 50% 25%" />
+          </figure>
+          <div class="motto-copy">
+            <h2 class="display">My Motto</h2>
+            <blockquote>“Terinspirasi dan menginspirasi”<small>Inspired and inspiring</small></blockquote>
+            <p>
+              Selalu mencari inspirasi dari orang-orang yang luar biasa dalam
+              berbagai bidang, karena saya percaya bahwa dengan belajar dari
+              mereka, saya dapat memaksimalkan potensi saya.
+            </p>
+            <p>
+              Saya ingin menjadi sumber inspirasi bagi orang lain setelah
+              mencapai kesuksesan saya sendiri; saya ingin memberi mereka
+              inspirasi dan pengetahuan untuk membantu mereka mencapainya juga.
+              Dengan cara ini, siklus inspirasi dapat berlanjut dan
+              berkontribusi pada banyak orang dengan cara yang bermanfaat.
+            </p>
+            <p class="signature">— Septia Nenengsih</p>
+          </div>
+        </section>
+
+        <!-- ================= PARENTS ================= -->
+        <section class="slide parents reveal" id="parents">
+          <div class="parents-copy">
+            <h2 class="display">My Parents</h2>
+            <div class="letter" lang="id">
+              <p>
+                Terima kasih sudah selalu menjadi rumah tempat aku pulang.<br />
+                Terima kasih karena tidak pernah membandingkan prosesku dengan siapa pun, selalu percaya pada langkahku, dan tetap menganggapku sebagai putri kecil kalian, apa pun yang terjadi.
+              </p>
+              <p>
+                Untuk Papa, <strong>Ruslin, S.Pd.</strong>, dan Mama, <strong>Titi Kustiati, S.Pd., Gr.</strong>, terima kasih untuk setiap doa, dukungan, dan kasih sayang yang tidak pernah kurang.
+              </p>
+              <p class="letter-end">
+                Apa pun pencapaianku nanti, aku tahu ada dua orang yang selalu menjadi tempat ternyaman untuk pulang. 🤍
+              </p>
+            </div>
+          </div>
+          <div class="parents-photos">
+            <figure class="parent">
+              <div class="parent-frame">
+                <img src="asset/photo/father.jpg" alt="Portrait of Septia's father in a black suit and peci" style="object-position: 50% 2%" loading="lazy" />
+              </div>
+              <figcaption class="parent-cap"><strong>Papa</strong><span>Ruslin, S.Pd.</span></figcaption>
+            </figure>
+            <figure class="parent">
+              <div class="parent-frame">
+                <img src="asset/photo/mother.jpg" alt="Portrait of Septia's mother in a graduation gown" style="object-position: 50% 6%" loading="lazy" />
+              </div>
+              <figcaption class="parent-cap"><strong>Mama</strong><span>Titi Kustiati, S.Pd., Gr.</span></figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- ================= ACHIEVEMENTS ================= -->
+        <section class="slide achievements reveal" id="achievements">
+          <div class="ach-head">
+            <h2 class="display">Achievements</h2>
+            <p>
+              From national essay stages to ambassador programs and Qur'an
+              recitation — a few highlights, and the full list below.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Writing</span>
+              <span class="tag">Ambassador</span>
+              <span class="tag">Religious</span>
+              <span class="tag">Academic</span>
+            </div>
+          </div>
+
+          <div class="ach-cards">
+            <article class="ach-card">
+              <figure><img src="asset/photo/port-essay.jpg" alt="Poster announcing Septia as national essay winner" style="object-position: 50% 30%" /></figure>
+              <h3>National Essay Writing — 1st Place</h3>
+              <p>Hari Pahlawan essay contest · Menyapa Rindu Publisher · 2024</p>
+              <div class="tag-row"><span class="tag">Writing</span><span class="tag">National</span></div>
+            </article>
+            <article class="ach-card">
+              <figure><img src="asset/photo/duta-muslimah.jpg" alt="Septia wearing a Duta Muslimah Hijab sash" style="object-position: 50% 12%" /></figure>
+              <h3>Duta Muslimah Hijab — Hijab Syar'i</h3>
+              <p>Representing Nusa Tenggara Barat · National · 2025</p>
+              <div class="tag-row"><span class="tag">Ambassador</span><span class="tag">National</span></div>
+            </article>
+            <article class="ach-card">
+              <figure><img src="asset/photo/duta-edukasi.jpg" alt="Septia wearing a Duta Edukasi Indonesia sash" style="object-position: 62% 25%" /></figure>
+              <h3>Duta Edukasi Indonesia — Best 1 Instagram</h3>
+              <p>Representing Nusa Tenggara Barat · National · 2025</p>
+              <div class="tag-row"><span class="tag">Ambassador</span><span class="tag">National</span></div>
+            </article>
+          </div>
+
+          <div class="ach-list">
+            <div class="ach-filter" role="group" aria-label="Filter achievements">
+              <button class="chip is-active" data-filter="all">All</button>
+              <button class="chip" data-filter="writing">Writing</button>
+              <button class="chip" data-filter="ambassador">Ambassador</button>
+              <button class="chip" data-filter="religious">Religious</button>
+              <button class="chip" data-filter="academic">Academic</button>
+              <button class="chip" data-filter="creative">Creative</button>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr><th>Year</th><th>Achievement</th><th>Result</th><th>Organizer</th><th>Level</th></tr>
+                </thead>
+                <tbody>
+                  <tr data-cat="ambassador"><td>2025</td><td>Duta Muslimah Hijab (NTB representative)</td><td>Hijab Syar'i category</td><td>Duta Muslimah Hijab Since</td><td>National</td></tr>
+                  <tr data-cat="ambassador"><td>2025</td><td>Duta Edukasi Indonesia (NTB representative)</td><td>Best 1 Instagram · Best 2 TikTok · Best 3 YouTube · Best 3 Duta of the Month</td><td>Duta Edukasi_ID</td><td>National</td></tr>
+                  <tr data-cat="writing"><td>2025</td><td>Poetry writing contest batch #4, “Jejak Rindu di Bait Kata” (published in a book)</td><td>Selected author</td><td>Halo Penyair</td><td>National</td></tr>
+                  <tr data-cat="creative"><td>2025</td><td>Poster competition</td><td>Participant</td><td>Duta Inspirasi Library</td><td>National</td></tr>
+                  <tr data-cat="writing"><td>2024</td><td>Essay writing for Hari Pahlawan (Heroes' Day)</td><td>1st Place</td><td>Menyapa Rindu Publisher</td><td>National</td></tr>
+                  <tr data-cat="religious"><td>2024</td><td>Tilawah competition</td><td>1st Place</td><td>Social &amp; Religious Dept., HMIF FTI UAD</td><td>Study program</td></tr>
+                  <tr data-cat="academic"><td>2023</td><td>Indonesian Science Olympiad</td><td>Gold medal Biology · Bronze medal Civics</td><td>Indonesian Sains Olympiad</td><td>National</td></tr>
+                  <tr data-cat="writing"><td>2023</td><td>Reading &amp; writing literacy movement</td><td>Best 1</td><td>SMAN 1 Donggo</td><td>School</td></tr>
+                  <tr data-cat="academic"><td>2022</td><td>Scientific writing contest, Mahandraga Geological Event</td><td>3rd Place</td><td>Universitas Muhammadiyah Jember</td><td>National</td></tr>
+                  <tr data-cat="writing"><td>2022</td><td>Essay &amp; opinion, NTB Gemilang flagship program (“Pesona Destinasi Wisata Kampoeng La Hila”)</td><td>1st Place</td><td>Provincial Government of NTB</td><td>Province (NTB)</td></tr>
+                  <tr data-cat="religious"><td>2020</td><td>Religious sermon (ceramah) contest</td><td>1st Place</td><td>SMAN 1 Donggo</td><td>Sub-district</td></tr>
+                  <tr data-cat="religious"><td>2020</td><td>Tilawatil Qur'an</td><td>1st Place</td><td>SMAN 1 Donggo</td><td>School</td></tr>
+                  <tr data-cat="religious"><td>2020</td><td>Hafidz Qur'an (1 juz)</td><td>2nd Place</td><td>SMAN 1 Donggo</td><td>School</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="pubs">
+            <h3>Publications</h3>
+            <ul>
+              <li><strong>2023 · Essay</strong><span>“Pesona Destinasi Wisata Kampoeng La Hila sebagai Warisan Budaya Mewujudkan NTB Berwisata Global” — Universitas Mataram</span></li>
+              <li><strong>2023 · Book chapter</strong><span>“Kumpulan Puisi Anak SD” — SMAN 1 Donggo</span></li>
+              <li><strong>2021 · Journal</strong><span>The effect of project-based Scratch learning media on Grade X students' learning outcomes (circular motion) — Universitas Muhammadiyah Mataram</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ================= ORGANIZATION ================= -->
+        <section class="slide process reveal" id="organization">
+          <div class="process-copy">
+            <h2 class="display">Organization</h2>
+            <ol class="steps">
+              <li>
+                <span class="step-label">Step one · 2025 · Active</span>
+                <strong>Journalist</strong>
+                <span>Humas &amp; Protokol UAD (university level)</span>
+              </li>
+              <li>
+                <span class="step-label">Step two · 2025 · Active</span>
+                <strong>Media &amp; Communication Coordinator (KOMINFO)</strong>
+                <span>Forum Silaturahmi Mahasiswa Donggo (FOSMAD) Bima–Yogyakarta</span>
+              </li>
+              <li>
+                <span class="step-label">Step three · 2024/2025 · Active</span>
+                <strong>Staff, Advocacy &amp; Strategic Studies (Akastrat)</strong>
+                <span>Himpunan Mahasiswa Informatika (HMIF) UAD, and Permikomnas (national, Yogyakarta)</span>
+              </li>
+              <li>
+                <span class="step-label">Step four · 2023</span>
+                <strong>Committee Chair</strong>
+                <span>Kongres KBM Informatika (study program level)</span>
+              </li>
+            </ol>
+            <div class="committee">
+              <span class="committee-title">Committees · 2024</span>
+              <div class="tag-row">
+                <span class="tag">Business Plan Competition #2 · event staff</span>
+                <span class="tag">Kegiatan Menarik S3 · event staff</span>
+                <span class="tag">ICOM Informatics Competition · event staff</span>
+                <span class="tag">P2K UAD · mentor</span>
+              </div>
+            </div>
+          </div>
+          <figure class="process-photo">
+            <img src="asset/photo/traditional-attire.jpg" alt="Septia with five friends in traditional black and gold attire" style="object-position: 38% 40%" />
+          </figure>
+        </section>
+
+        <!-- ================= SOCIAL MEDIA ================= -->
+        <section class="slide social reveal" id="social">
+          <div class="phones" aria-hidden="true">
+            <div class="phone phone-a"><img src="asset/photo/port-mc.jpg" alt="" style="object-position: 50% 15%" /></div>
+            <div class="phone phone-b"><img src="asset/photo/port-tilawah.jpg" alt="" style="object-position: 50% 35%" /></div>
+          </div>
+          <div class="social-copy">
+            <h2 class="display">Social Media</h2>
+            <p>Follow along for events, recitations, writing and everyday moments.</p>
+            <div class="laptop" aria-hidden="true">
+              <div class="laptop-screen"><img src="asset/photo/duta-edukasi.jpg" alt="" style="object-position: 62% 30%" /></div>
+              <div class="laptop-base"></div>
+            </div>
+            <div class="pill-row">
+              <a class="pill" href="https://www.instagram.com/septia_q2/" target="_blank" rel="noopener"><svg><use href="#i-instagram" /></svg>@septia_q2</a>
+              <a class="pill" href="https://www.instagram.com/septianenengsih/" target="_blank" rel="noopener"><svg><use href="#i-instagram" /></svg>@septianenengsih</a>
+              <a class="pill" href="https://www.tiktok.com/@ceptiiiii7" target="_blank" rel="noopener"><svg><use href="#i-tiktok" /></svg>@ceptiiiii7</a>
+              <a class="pill" href="https://www.facebook.com/septiai.ruslin" target="_blank" rel="noopener"><svg><use href="#i-facebook" /></svg>Facebook</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= GALLERY ================= -->
+        <section class="slide gallery reveal" id="gallery">
+          <h2 class="display">Gallery</h2>
+          <div class="arches">
+            <figure>
+              <div class="arch"><img src="asset/photo/gerak-jalan.jpg" alt="Five friends in scout uniforms at Gerak Jalan Indah" style="object-position: 50% 30%" loading="lazy" /></div>
+              <figcaption class="pill">Gerak Jalan Indah</figcaption>
+            </figure>
+            <figure>
+              <div class="arch"><img src="asset/photo/traditional-attire.jpg" alt="Six friends in traditional attire" style="object-position: 55% 40%" loading="lazy" /></div>
+              <figcaption class="pill">Traditional Attire</figcaption>
+            </figure>
+            <figure>
+              <div class="arch"><img src="asset/photo/spiritual-camp.jpg" alt="Friends in scout uniforms at the Spiritual Camp" style="object-position: 50% 50%" loading="lazy" /></div>
+              <figcaption class="pill">Spiritual Camp</figcaption>
+            </figure>
+            <figure>
+              <div class="arch"><img src="asset/photo/sash-event.jpg" alt="Septia wearing a sash at a celebration" style="object-position: 28% 30%" loading="lazy" /></div>
+              <figcaption class="pill">Celebration</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section class="slide contact reveal" id="contact">
+          <figure class="contact-banner">
+            <img src="asset/photo/group-panorama.jpg" alt="Large group photo of students in white uniforms" style="object-position: 50% 45%" loading="lazy" />
+          </figure>
+          <div class="contact-body">
+            <h2 class="display">Get in touch</h2>
+            <ul class="contact-list">
+              <li>
+                <svg><use href="#i-mail" /></svg>
+                <div><span class="label">Email</span><a href="mailto:septianenengsih63@gmail.com">septianenengsih63@gmail.com</a></div>
+              </li>
+              <li>
+                <svg><use href="#i-pin" /></svg>
+                <div><span class="label">Campus</span><span>Universitas Ahmad Dahlan, Yogyakarta</span></div>
+              </li>
+              <li>
+                <svg><use href="#i-instagram" /></svg>
+                <div>
+                  <span class="label">Instagram</span>
+                  <a href="https://www.instagram.com/septia_q2/" target="_blank" rel="noopener">@septia_q2</a>
+                  ·
+                  <a href="https://www.instagram.com/septianenengsih/" target="_blank" rel="noopener">@septianenengsih</a>
+                </div>
+              </li>
+              <li>
+                <svg><use href="#i-tiktok" /></svg>
+                <div><span class="label">TikTok</span><a href="https://www.tiktok.com/@ceptiiiii7" target="_blank" rel="noopener">@ceptiiiii7</a></div>
+              </li>
+              <li>
+                <svg><use href="#i-facebook" /></svg>
+                <div><span class="label">Facebook</span><a href="https://www.facebook.com/septiai.ruslin" target="_blank" rel="noopener">septiai.ruslin</a></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Septia Nenengsih · Made with 💌 by Sazmi (Septia &amp; Azmi)</p>
+    </footer>
+
+    <script src="app.js?v=5"></script>
+  </body>
+</html>
