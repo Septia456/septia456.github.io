@@ -14,7 +14,16 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=5" />
+    <link rel="stylesheet" href="style.css?v=10" />
+    <script>
+      document.documentElement.classList.add("js", "intro-active");
+      // failsafe: never leave the page locked behind the intro
+      setTimeout(function () {
+        var r = document.documentElement;
+        r.classList.remove("intro-active");
+        r.classList.add("is-ready");
+      }, 7000);
+    </script>
   </head>
   <body>
     <!-- Icon sprite -->
@@ -43,8 +52,31 @@
         <symbol id="i-arrow" viewBox="0 0 64 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
           <path d="M1 6h61M56 1l6 5-6 5" />
         </symbol>
+        <symbol id="i-play" viewBox="0 0 24 24">
+          <path d="M7 4.5v15l12-7.5z" fill="currentColor" />
+        </symbol>
+        <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" />
+        </symbol>
+        <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 4v11M7 10l5 5 5-5M5 20h14" />
+        </symbol>
       </defs>
     </svg>
+
+    <!-- ================= INTRO LOADER ================= -->
+    <div class="intro" id="intro" aria-hidden="true">
+      <div class="intro-stars"></div>
+      <span class="intro-meteor"></span>
+      <div class="intro-inner">
+        <p class="intro-small">Welcome to my</p>
+        <p class="intro-big display">Portofolio</p>
+        <div class="intro-load"><span>Loading</span><span class="intro-pct">0%</span></div>
+        <div class="intro-bar"><i></i></div>
+      </div>
+      <p class="intro-skip">Click anywhere to skip</p>
+    </div>
+
 
     <!-- ================= NAVBAR ================= -->
     <header class="nav" id="top-nav">
@@ -59,6 +91,7 @@
             <li><a href="#education" data-section="education">Education</a></li>
             <li><a href="#achievements" data-section="achievements">Achievements</a></li>
             <li><a href="#organization" data-section="organization">Organization</a></li>
+            <li><a href="#english" data-section="english">English Class</a></li>
             <li><a href="#social" data-section="social">Social Media</a></li>
             <li><a href="#gallery" data-section="gallery">Gallery</a></li>
             <li><a href="#contact" data-section="contact">Contact</a></li>
@@ -68,9 +101,28 @@
     </header>
 
     <main>
+      <!-- ================= WELCOME (full photo) ================= -->
+      <section class="welcome" id="welcome" aria-label="Welcome">
+        <div class="welcome-media">
+          <img class="welcome-bg" src="asset/photo/hero-welcome.jpg" alt="" aria-hidden="true" />
+          <img class="welcome-photo" src="asset/photo/hero-welcome.jpg" alt="Septia Nenengsih in batik, holding a microphone and the Student Mobility programme booklet" fetchpriority="high" />
+        </div>
+        <div class="welcome-shade" aria-hidden="true"></div>
+        <div class="welcome-copy">
+          <p class="welcome-kicker" data-intro style="--i: 0">Assalamu'alaikum &amp; hello there</p>
+          <h1 class="display welcome-title" data-intro style="--i: 1">Welcome</h1>
+          <p class="welcome-sub" data-intro style="--i: 2">to the portofolio of <strong>Septia Nenengsih</strong></p>
+          <p class="welcome-type" data-intro style="--i: 3">
+            <span class="sr-only">Informatics student, writer, Master of Ceremony, journalist and education ambassador.</span>
+            <span aria-hidden="true">I'm <span class="typer" data-words="an Informatics student|a writer|a Master of Ceremony|a journalist|an education ambassador">an Informatics student</span><span class="caret"></span></span>
+          </p>
+          <a href="#home" class="welcome-scroll" data-intro style="--i: 4">Scroll<span class="welcome-line"></span></a>
+        </div>
+      </section>
+
       <!-- ================= HERO ================= -->
       <div class="stage stage-dark">
-        <section class="slide hero" id="home">
+        <section class="slide hero reveal" id="home">
           <div class="hero-strip">
             <figure><img src="asset/photo/port-mc.jpg" alt="Septia as a Master of Ceremony" style="object-position: 50% 8%" /></figure>
             <figure><img src="asset/photo/traditional-attire.jpg" alt="Septia in traditional attire with friends" style="object-position: 40% 35%" /></figure>
@@ -78,7 +130,7 @@
             <figure><img src="asset/photo/port-tilawah.jpg" alt="Septia holding a tilawah certificate" style="object-position: 50% 48%" /></figure>
           </div>
           <div class="hero-body">
-            <h1 class="display hero-title">Portofolio</h1>
+            <h2 class="display hero-title">Portofolio</h2>
             <div class="hero-meta">
               <h2>SEPTIA NENENGSIH</h2>
               <p>INFORMATICS STUDENT · WRITER · MC</p>
@@ -348,6 +400,97 @@
           </figure>
         </section>
 
+        <!-- ================= PROFESSIONAL ENGLISH CLASS ================= -->
+        <section class="slide english reveal" id="english">
+          <div class="eng-head">
+            <div>
+              <span class="eng-kicker">Coursework · Class D · Universitas Ahmad Dahlan</span>
+              <h2 class="display">Professional<br />English Class</h2>
+            </div>
+            <p>
+              Assignments from my Professional English course, practising how to
+              introduce myself and communicate clearly and politely in English
+              for real, everyday professional situations.
+            </p>
+          </div>
+
+          <ol class="eng-list">
+            <!-- Assignment 1 -->
+            <li class="eng-item">
+              <div class="eng-meta">
+                <span class="eng-no">01</span>
+                <span class="tag">Video</span>
+                <span class="eng-when">Assignment 1</span>
+              </div>
+              <div class="eng-body">
+                <div class="eng-text">
+                  <h3>Self-Introduction</h3>
+                  <p>
+                    A short video in which I introduce myself in English: who I
+                    am, where I study, and what I'm passionate about.
+                  </p>
+                  <div class="pill-row">
+                    <a class="pill" href="https://drive.google.com/file/d/14MGHjVKNsEXRa4Qqp-EPsTHUsNN0pEld/view" target="_blank" rel="noopener"><svg><use href="#i-external" /></svg>Open in Google Drive</a>
+                  </div>
+                </div>
+                <div class="eng-video" data-drive="14MGHjVKNsEXRa4Qqp-EPsTHUsNN0pEld">
+                  <button class="eng-play" type="button" aria-label="Play the self-introduction video">
+                    <span class="eng-play-card">Welcome<small>Self-introduction<span class="hide-sm"> · Septia Nenengsih</span></small></span>
+                    <span class="eng-play-btn"><svg><use href="#i-play" /></svg></span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <!-- Assignment 2 -->
+            <li class="eng-item">
+              <div class="eng-meta">
+                <span class="eng-no">02</span>
+                <span class="tag">PDF</span>
+                <span class="eng-when">Second meeting</span>
+              </div>
+              <div class="eng-body">
+                <div class="eng-text">
+                  <h3>Professional Writing for Online Shopping</h3>
+                  <p>
+                    A formal complaint letter for an item that didn't match its
+                    description, plus short professional messages based on my own
+                    online order.
+                  </p>
+                  <ol class="eng-points">
+                    <li>Asking the seller before purchase</li>
+                    <li>Asking about a store voucher</li>
+                    <li>Asking about shipping time</li>
+                    <li>Writing a product review</li>
+                  </ol>
+                  <div class="pill-row">
+                    <a class="pill" href="asset/docs/english-assignment-2-online-shopping.pdf" target="_blank" rel="noopener"><svg><use href="#i-external" /></svg>Read the PDF</a>
+                    <a class="pill" href="asset/docs/english-assignment-2-online-shopping.pdf" download><svg><use href="#i-download" /></svg>Download</a>
+                  </div>
+                </div>
+                <figure class="eng-letter">
+                  <span class="eng-letter-label">Excerpt · Complaint letter</span>
+                  <div class="letter" lang="en">
+                    <p class="eng-letter-subject">Complaint: Item Not as Described</p>
+                    <p>Dear <strong>GAFINA.ID</strong>,</p>
+                    <p>
+                      I am writing about my order placed on 8 August 2026 for the
+                      Karla Top. The product page described it as a premium
+                      semi-wool blouse; however, the item I received is a thinner
+                      fabric with a different shade and a smaller size.
+                    </p>
+                    <p>
+                      As the item does not match its description, I would like to
+                      request a return and full refund.
+                    </p>
+                    <p class="eng-letter-sign">Sincerely,<br />Septia Nenengsih</p>
+                  </div>
+                </figure>
+              </div>
+            </li>
+          </ol>
+        </section>
+
         <!-- ================= SOCIAL MEDIA ================= -->
         <section class="slide social reveal" id="social">
           <div class="phones" aria-hidden="true">
@@ -390,6 +533,78 @@
               <div class="arch"><img src="asset/photo/sash-event.jpg" alt="Septia wearing a sash at a celebration" style="object-position: 28% 30%" loading="lazy" /></div>
               <figcaption class="pill">Celebration</figcaption>
             </figure>
+          </div>
+        </section>
+
+        <!-- ================= MY WATCHLIST ================= -->
+        <section class="slide watchlist reveal" id="watchlist">
+          <div class="intro-stars watch-stars" aria-hidden="true"></div>
+          <span class="intro-meteor watch-meteor" aria-hidden="true"></span>
+          <div class="sparkles" aria-hidden="true">
+            <span style="top: 9%; left: 6%; --t: 0s; --s: 1.1"></span>
+            <span style="top: 18%; left: 44%; --t: 1.2s; --s: 0.7"></span>
+            <span style="top: 7%; left: 78%; --t: 0.6s; --s: 1"></span>
+            <span style="top: 38%; left: 94%; --t: 2s; --s: 0.8"></span>
+            <span style="top: 56%; left: 3%; --t: 1.6s; --s: 0.6"></span>
+            <span style="top: 86%; left: 22%; --t: 0.3s; --s: 0.9"></span>
+            <span style="top: 92%; left: 63%; --t: 2.4s; --s: 0.7"></span>
+            <span style="top: 74%; left: 97%; --t: 0.9s; --s: 1.2"></span>
+            <span style="top: 30%; left: 64%; --t: 1.9s; --s: 0.5"></span>
+          </div>
+
+          <div class="watch-head">
+            <h2 class="display">My Watchlist</h2>
+            <p>Cartoons, conversations and kitchen ideas I keep coming back to — press play to watch here.</p>
+          </div>
+
+          <div class="watch-grid">
+            <article class="watch-card">
+              <div class="watch-thumb" data-yt="Bnv-06GMN5I">
+                <button type="button" class="watch-play" aria-label="Play Upin &amp; Ipin Musim 20 — Jeruk">
+                  <img src="https://i.ytimg.com/vi/Bnv-06GMN5I/hqdefault.jpg" alt="" loading="lazy" />
+                  <span class="watch-btn"><svg><use href="#i-play" /></svg></span>
+                </button>
+              </div>
+              <span class="watch-tag">Cartoon</span>
+              <h3>Upin &amp; Ipin Musim 20 — Jeruk</h3>
+              <a class="watch-channel" href="https://youtu.be/Bnv-06GMN5I" target="_blank" rel="noopener">Upin &amp; Ipin Animation</a>
+            </article>
+
+            <article class="watch-card">
+              <div class="watch-thumb" data-yt="FrI0IvJf5iI">
+                <button type="button" class="watch-play" aria-label="Play Sofia the First — Perpustakaan Rahasia">
+                  <img src="https://i.ytimg.com/vi/FrI0IvJf5iI/hqdefault.jpg" alt="" loading="lazy" />
+                  <span class="watch-btn"><svg><use href="#i-play" /></svg></span>
+                </button>
+              </div>
+              <span class="watch-tag">Cartoon</span>
+              <h3>Sofia the First — Perpustakaan Rahasia</h3>
+              <a class="watch-channel" href="https://youtu.be/FrI0IvJf5iI" target="_blank" rel="noopener">Kartun Bahasa Indonesia</a>
+            </article>
+
+            <article class="watch-card">
+              <div class="watch-thumb" data-yt="3Svjn7U8Who">
+                <button type="button" class="watch-play" aria-label="Play Sherly Tjoanda: Ibu Maluku Utara">
+                  <img src="https://i.ytimg.com/vi/3Svjn7U8Who/hqdefault.jpg" alt="" loading="lazy" />
+                  <span class="watch-btn"><svg><use href="#i-play" /></svg></span>
+                </button>
+              </div>
+              <span class="watch-tag">Interview</span>
+              <h3>Sherly Tjoanda: Ibu Maluku Utara — Orang Penting</h3>
+              <a class="watch-channel" href="https://youtu.be/3Svjn7U8Who" target="_blank" rel="noopener">Garuda TV</a>
+            </article>
+
+            <article class="watch-card">
+              <div class="watch-thumb" data-yt="RMUdlfK5iJg">
+                <button type="button" class="watch-play" aria-label="Play 12 Inspirasi Masakan 15 Ribuan untuk Seminggu">
+                  <img src="https://i.ytimg.com/vi/RMUdlfK5iJg/hqdefault.jpg" alt="" loading="lazy" />
+                  <span class="watch-btn"><svg><use href="#i-play" /></svg></span>
+                </button>
+              </div>
+              <span class="watch-tag">Cooking</span>
+              <h3>12 Inspirasi Masakan 15 Ribuan untuk Seminggu</h3>
+              <a class="watch-channel" href="https://youtu.be/RMUdlfK5iJg" target="_blank" rel="noopener">tri pujis</a>
+            </article>
           </div>
         </section>
 
@@ -436,6 +651,6 @@
       <p>© 2026 Septia Nenengsih · Made with 💌 by Sazmi (Septia &amp; Azmi)</p>
     </footer>
 
-    <script src="app.js?v=5"></script>
+    <script src="app.js?v=7"></script>
   </body>
 </html>
