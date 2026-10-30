@@ -48,7 +48,6 @@ collections:
               - { name: tagline, label: Tagline, widget: string }
               - { name: button, label: Teks tombol, widget: string }
               - { name: button_link, label: Link tombol, widget: string }
-          - { name: footer, label: Teks footer, widget: string }
 
       # ------------------------------------------------------------------ About
       - name: about

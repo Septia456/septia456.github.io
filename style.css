@@ -1050,14 +1050,6 @@ tr.is-hidden {
   text-decoration-thickness: 2px;
 }
 
-.site-footer {
-  padding: 0 24px 40px;
-  background: var(--stage-light);
-  text-align: center;
-  font-size: 0.82rem;
-  color: var(--muted);
-}
-
 /* ---------------------------------------------------------
    Responsive
    --------------------------------------------------------- */

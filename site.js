@@ -151,7 +151,6 @@
       if (hero.button) btn.textContent = hero.button;
       if (hero.button_link) btn.setAttribute("href", safeUrl(hero.button_link));
     }
-    if (d.footer) setText(".site-footer p", d.footer);
   };
 
   render.about = function (d) {
