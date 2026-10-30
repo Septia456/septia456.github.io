@@ -133,6 +133,13 @@ collections:
               - { name: translation, label: Terjemahan, widget: string, required: false }
               - { name: paragraphs, label: Paragraf, widget: list, field: { name: p, label: Paragraf, widget: text } }
               - { name: signature, label: Tanda tangan, widget: string, required: false }
+              - name: cv
+                label: Tombol CV
+                widget: object
+                required: false
+                fields:
+                  - { name: label, label: Teks tombol, widget: string, default: See my CV }
+                  - { name: url, label: File CV (PDF - upload), widget: file, media_folder: /asset/docs, public_folder: /asset/docs }
           - name: parents
             label: Orang Tua
             widget: object
@@ -238,7 +245,7 @@ collections:
             widget: list
             summary: "{{fields.label}} — {{fields.title}}"
             fields:
-              - { name: type, label: Jenis, widget: select, options: [Video, PDF, Link, Text] }
+              - { name: type, label: Jenis, widget: select, options: [Video, PDF, Research, Link, Text] }
               - { name: label, label: "Label (mis. Assignment 3)", widget: string }
               - { name: title, label: Judul, widget: string }
               - { name: description, label: Deskripsi, widget: text }
@@ -264,6 +271,26 @@ collections:
                   - { name: greeting, label: Salam (**tebal** didukung), widget: string, required: false }
                   - { name: body, label: Paragraf isi, widget: list, required: false, field: { name: paragraph, label: Paragraf, widget: text } }
                   - { name: signoff, label: Penutup (Enter = baris baru), widget: text, required: false }
+              - { name: journals_label, label: Label daftar jurnal (opsional), widget: string, required: false }
+              - name: journals
+                label: Daftar jurnal (opsional)
+                widget: list
+                required: false
+                summary: "{{fields.title}}"
+                fields:
+                  - { name: title, label: Judul artikel, widget: string }
+                  - { name: source, label: "Penulis, tahun, jurnal", widget: string, required: false }
+                  - { name: url, label: Link halaman artikel, widget: string, required: false }
+                  - { name: pdf, label: Link PDF, widget: string, required: false }
+                  - { name: doi, label: DOI, widget: string, required: false }
+              - name: preview
+                label: Gambar pratinjau dokumen (opsional)
+                widget: object
+                required: false
+                fields:
+                  - { name: src, label: Gambar, widget: image, media_folder: /asset/img, public_folder: /asset/img }
+                  - { name: alt, label: Deskripsi, widget: string, required: false }
+                  - { name: label, label: Label di atas gambar, widget: string, required: false }
 
       # ------------------------------------------------------------ Social Media
       - name: social
