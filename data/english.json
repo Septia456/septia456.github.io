@@ -16,26 +16,32 @@
     },
     {
       "type": "PDF",
-      "label": "Second meeting",
-      "title": "Professional Writing for Online Shopping",
-      "description": "A formal complaint letter for an item that didn't match its description, plus short professional messages based on my own online order.",
+      "label": "Assignment 2",
+      "title": "Professional Text about Online Shopping",
+      "description": "An analysis of a professional text, a Databoks (Katadata) article on the e-commerce platforms Indonesians use most in 2026, followed by an essay about my own online shopping experience.",
       "points": [
-        "Asking the seller before purchase",
-        "Asking about a store voucher",
-        "Asking about shipping time",
-        "Writing a product review"
+        "Purpose, tone and audience of a professional text",
+        "Survey data: Shopee 73%, TikTok Shop 16%, Tokopedia 7%",
+        "My own experience shopping on Shopee",
+        "Advantages and disadvantages of online shopping"
       ],
       "pdf": "/asset/docs/english-assignment-2-online-shopping.pdf",
-      "links": [],
+      "links": [
+        {
+          "label": "Source article",
+          "url": "https://databoks.katadata.co.id/en/technology-telecommunications/statistics/6aace86042cdb/shopee-becomes-the-most-popular-e-commerce-platform-used-by-indonesians-in-2026"
+        }
+      ],
       "excerpt": {
-        "label": "Excerpt · Complaint letter",
-        "subject": "Complaint: Item Not as Described",
-        "greeting": "Dear **GAFINA.ID**,",
+        "label": "Excerpt · My analysis",
+        "subject": "Databoks (Katadata) · September 2026",
+        "greeting": "",
         "body": [
-          "I am writing about my order placed on 8 August 2026 for the Karla Top. The product page described it as a premium semi-wool blouse; however, the item I received is a thinner fabric with a different shade and a smaller size.",
-          "As the item does not match its description, I would like to request a return and full refund."
+          "The article “Shopee Becomes the Most Popular E-Commerce Platform Used by Indonesians in 2026” is an example of professional writing because it presents information about online shopping in Indonesia based on survey data.",
+          "**Tone:** professional, objective, and informative, because it reports survey results with numbers and a clear data source, and it avoids emotional or casual language.",
+          "Overall, I think online shopping is very useful and convenient, especially for saving time and money."
         ],
-        "signoff": "Sincerely,\nSeptia Nenengsih"
+        "signoff": ""
       }
     },
     {
