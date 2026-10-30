@@ -195,6 +195,12 @@
     copy.appendChild(h("blockquote", null, ["“" + (m.quote || "") + "”", m.translation ? h("small", null, m.translation) : null]));
     (m.paragraphs || []).forEach(function (p) { copy.appendChild(h("p", null, p)); });
     if (m.signature) copy.appendChild(h("p", "signature", m.signature));
+    if (m.cv && safeUrl(m.cv.url)) {
+      var cv = link(m.cv.label || "See my CV", m.cv.url, "i-doc", "pill pill-lg motto-cv");
+      cv.setAttribute("target", "_blank");
+      cv.setAttribute("rel", "noopener");
+      copy.appendChild(h("div", "motto-actions", cv));
+    }
     sec.appendChild(copy);
 
     var p = d.parents || {};
@@ -332,6 +338,26 @@
         ex.body.forEach(function (p) { letter.appendChild(richEl("p", null, p)); });
         if (ex.signoff) letter.appendChild(richEl("p", "eng-letter-sign", ex.signoff));
         body.appendChild(h("figure", "eng-letter", [h("span", "eng-letter-label", ex.label || "Excerpt"), letter]));
+      } else if ((item.journals || []).length) {
+        var jl = h("ol", "eng-journals");
+        item.journals.forEach(function (j) {
+          if (!j || !j.title) return;
+          var jlinks = h("div", "eng-journal-links");
+          if (safeUrl(j.url)) jlinks.appendChild(link("Article", j.url, "i-external", "eng-jlink"));
+          if (safeUrl(j.pdf)) jlinks.appendChild(link("PDF", j.pdf, "i-download", "eng-jlink"));
+          if (j.doi) jlinks.appendChild(link("DOI", "https://doi.org/" + String(j.doi).replace(/^https?:\/\/(dx\.)?doi\.org\//i, ""), null, "eng-jlink"));
+          jl.appendChild(h("li", null, [h("strong", null, j.title), j.source ? h("span", null, j.source) : null, jlinks.children.length ? jlinks : null]));
+        });
+        body.appendChild(h("figure", "eng-reading", [h("span", "eng-letter-label", item.journals_label || "Reading list"), jl]));
+      } else if (item.preview && safeUrl(item.preview.src)) {
+        var pv = item.preview;
+        var frame = h("a", "eng-doc", [img({ src: pv.src, alt: pv.alt || item.title, pos: "50% 0%" }, true), pv.label ? h("span", "eng-doc-label", pv.label) : null], {
+          href: safeUrl(item.pdf) || safeUrl(pv.src),
+          target: "_blank",
+          rel: "noopener",
+          "aria-label": "Open " + item.title
+        });
+        body.appendChild(frame);
       }
       li.appendChild(body);
       list.appendChild(li);
