@@ -1,0 +1,29 @@
+{
+  "title": "Gallery",
+  "items": [
+    {
+      "src": "/asset/photo/gerak-jalan.jpg",
+      "alt": "Five friends in scout uniforms at Gerak Jalan Indah",
+      "pos": "50% 30%",
+      "caption": "Gerak Jalan Indah"
+    },
+    {
+      "src": "/asset/photo/traditional-attire.jpg",
+      "alt": "Six friends in traditional attire",
+      "pos": "55% 40%",
+      "caption": "Traditional Attire"
+    },
+    {
+      "src": "/asset/photo/spiritual-camp.jpg",
+      "alt": "Friends in scout uniforms at the Spiritual Camp",
+      "pos": "50% 50%",
+      "caption": "Spiritual Camp"
+    },
+    {
+      "src": "/asset/photo/sash-event.jpg",
+      "alt": "Septia wearing a sash at a celebration",
+      "pos": "28% 30%",
+      "caption": "Celebration"
+    }
+  ]
+}

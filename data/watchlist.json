@@ -1,0 +1,30 @@
+{
+  "title": "My Watchlist",
+  "text": "Cartoons, conversations and kitchen ideas I keep coming back to — press play to watch here.",
+  "items": [
+    {
+      "url": "https://youtu.be/Bnv-06GMN5I",
+      "tag": "Cartoon",
+      "title": "Upin & Ipin Musim 20 — Jeruk",
+      "channel": "Upin & Ipin Animation"
+    },
+    {
+      "url": "https://youtu.be/FrI0IvJf5iI",
+      "tag": "Cartoon",
+      "title": "Sofia the First — Perpustakaan Rahasia",
+      "channel": "Kartun Bahasa Indonesia"
+    },
+    {
+      "url": "https://youtu.be/3Svjn7U8Who",
+      "tag": "Interview",
+      "title": "Sherly Tjoanda: Ibu Maluku Utara — Orang Penting",
+      "channel": "Garuda TV"
+    },
+    {
+      "url": "https://youtu.be/RMUdlfK5iJg",
+      "tag": "Cooking",
+      "title": "12 Inspirasi Masakan 15 Ribuan untuk Seminggu",
+      "channel": "tri pujis"
+    }
+  ]
+}

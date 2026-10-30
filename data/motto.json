@@ -1,0 +1,45 @@
+{
+  "motto": {
+    "title": "My Motto",
+    "photo": {
+      "src": "/asset/photo/motto-portrait.jpg",
+      "alt": "Portrait of Septia in a green kebaya and sash",
+      "pos": "50% 25%"
+    },
+    "quote": "Terinspirasi dan menginspirasi",
+    "translation": "Inspired and inspiring",
+    "paragraphs": [
+      "Selalu mencari inspirasi dari orang-orang yang luar biasa dalam berbagai bidang, karena saya percaya bahwa dengan belajar dari mereka, saya dapat memaksimalkan potensi saya.",
+      "Saya ingin menjadi sumber inspirasi bagi orang lain setelah mencapai kesuksesan saya sendiri; saya ingin memberi mereka inspirasi dan pengetahuan untuk membantu mereka mencapainya juga. Dengan cara ini, siklus inspirasi dapat berlanjut dan berkontribusi pada banyak orang dengan cara yang bermanfaat."
+    ],
+    "signature": "— Septia Nenengsih"
+  },
+  "parents": {
+    "title": "My Parents",
+    "letter": [
+      "Terima kasih sudah selalu menjadi rumah tempat aku pulang.\nTerima kasih karena tidak pernah membandingkan prosesku dengan siapa pun, selalu percaya pada langkahku, dan tetap menganggapku sebagai putri kecil kalian, apa pun yang terjadi.",
+      "Untuk Papa, **Ruslin, S.Pd.**, dan Mama, **Titi Kustiati, S.Pd., Gr.**, terima kasih untuk setiap doa, dukungan, dan kasih sayang yang tidak pernah kurang."
+    ],
+    "ending": "Apa pun pencapaianku nanti, aku tahu ada dua orang yang selalu menjadi tempat ternyaman untuk pulang. 🤍",
+    "people": [
+      {
+        "role": "Papa",
+        "name": "Ruslin, S.Pd.",
+        "photo": {
+          "src": "/asset/photo/father.jpg",
+          "alt": "Portrait of Septia's father in a black suit and peci",
+          "pos": "50% 2%"
+        }
+      },
+      {
+        "role": "Mama",
+        "name": "Titi Kustiati, S.Pd., Gr.",
+        "photo": {
+          "src": "/asset/photo/mother.jpg",
+          "alt": "Portrait of Septia's mother in a graduation gown",
+          "pos": "50% 6%"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title": "About Me",
+  "photo": {
+    "src": "/asset/photo/duta-edukasi.jpg",
+    "alt": "Septia wearing a Duta Edukasi Indonesia sash",
+    "pos": "62% 30%"
+  },
+  "paragraphs": [
+    "Hi, I'm Septia Nenengsih — an Informatics student at Universitas Ahmad Dahlan from Bima, West Nusa Tenggara. I'm passionate about technology and solving problems with digital solutions, and I'm always learning and growing in programming, data analysis and technological innovation.",
+    "Beyond the screen, I write essays and poetry, recite the Qur'an, host events as an MC and report as a journalist for UAD's Public Relations & Protocol office. I like to work in a team and strive to contribute to the world of technology."
+  ],
+  "facts": [
+    "Informatics · Faculty of Industrial Technology, UAD (class of 2023)",
+    "Journalist · Humas & Protokol UAD",
+    "Ambassador · Duta Muslimah Hijab & Duta Edukasi Indonesia (NTB)",
+    "Writer · national essay winner and selected poetry author"
+  ],
+  "social": [
+    {
+      "icon": "instagram",
+      "url": "https://www.instagram.com/septia_q2/"
+    },
+    {
+      "icon": "tiktok",
+      "url": "https://www.tiktok.com/@ceptiiiii7"
+    },
+    {
+      "icon": "facebook",
+      "url": "https://www.facebook.com/septiai.ruslin"
+    },
+    {
+      "icon": "mail",
+      "url": "mailto:septianenengsih63@gmail.com"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "title": "Get in touch",
+  "banner": {
+    "src": "/asset/photo/group-panorama.jpg",
+    "alt": "Large group photo of students in white uniforms",
+    "pos": "50% 45%"
+  },
+  "items": [
+    {
+      "icon": "mail",
+      "label": "Email",
+      "entries": [
+        {
+          "text": "septianenengsih63@gmail.com",
+          "url": "mailto:septianenengsih63@gmail.com"
+        }
+      ]
+    },
+    {
+      "icon": "pin",
+      "label": "Campus",
+      "entries": [
+        {
+          "text": "Universitas Ahmad Dahlan, Yogyakarta"
+        }
+      ]
+    },
+    {
+      "icon": "instagram",
+      "label": "Instagram",
+      "entries": [
+        {
+          "text": "@septia_q2",
+          "url": "https://www.instagram.com/septia_q2/"
+        },
+        {
+          "text": "@septianenengsih",
+          "url": "https://www.instagram.com/septianenengsih/"
+        }
+      ]
+    },
+    {
+      "icon": "tiktok",
+      "label": "TikTok",
+      "entries": [
+        {
+          "text": "@ceptiiiii7",
+          "url": "https://www.tiktok.com/@ceptiiiii7"
+        }
+      ]
+    },
+    {
+      "icon": "facebook",
+      "label": "Facebook",
+      "entries": [
+        {
+          "text": "septiai.ruslin",
+          "url": "https://www.facebook.com/septiai.ruslin"
+        }
+      ]
+    }
+  ]
+}

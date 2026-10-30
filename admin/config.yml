@@ -1,0 +1,364 @@
+backend:
+  name: github
+  repo: Septia456/septia456.github.io
+  branch: main
+
+site_url: https://septia456.github.io
+display_url: https://septia456.github.io
+locale: id
+
+media_folder: asset/photo
+public_folder: /asset/photo
+
+collections:
+  - name: site
+    label: Konten Website
+    files:
+      # ---------------------------------------------------------------- Beranda
+      - name: home
+        label: Beranda (Welcome, Hero, Footer)
+        file: data/home.json
+        format: json
+        fields:
+          - name: welcome
+            label: Welcome (foto penuh)
+            widget: object
+            fields:
+              - { name: image, label: Foto, widget: image }
+              - { name: image_alt, label: Deskripsi foto, widget: string, required: false }
+              - { name: kicker, label: Teks kecil atas, widget: string }
+              - { name: title, label: Judul besar, widget: string }
+              - { name: sub, label: Teks sebelum nama, widget: string }
+              - { name: name, label: Nama, widget: string }
+              - { name: words, label: "Teks mengetik (I'm ...)", widget: list, field: { name: word, label: Kata, widget: string } }
+          - name: hero
+            label: Hero (Portofolio)
+            widget: object
+            fields:
+              - name: images
+                label: Foto strip
+                widget: list
+                summary: "{{fields.alt}}"
+                fields:
+                  - { name: src, label: Foto, widget: image }
+                  - { name: alt, label: Deskripsi, widget: string, required: false }
+                  - { name: pos, label: "Posisi fokus (mis. 50% 30%)", widget: string, required: false }
+              - { name: title, label: Judul, widget: string }
+              - { name: name, label: Nama, widget: string }
+              - { name: tagline, label: Tagline, widget: string }
+              - { name: button, label: Teks tombol, widget: string }
+              - { name: button_link, label: Link tombol, widget: string }
+          - { name: footer, label: Teks footer, widget: string }
+
+      # ------------------------------------------------------------------ About
+      - name: about
+        label: About Me
+        file: data/about.json
+        format: json
+        fields:
+          - { name: title, label: Judul, widget: string }
+          - name: photo
+            label: Foto
+            widget: object
+            fields:
+              - { name: src, label: Foto, widget: image }
+              - { name: alt, label: Deskripsi, widget: string, required: false }
+              - { name: pos, label: "Posisi fokus (mis. 50% 30%)", widget: string, required: false }
+          - { name: paragraphs, label: Paragraf, widget: list, field: { name: p, label: Paragraf, widget: text } }
+          - { name: facts, label: Poin ringkas (daftar bernomor), widget: list, field: { name: f, label: Poin, widget: string } }
+          - name: social
+            label: Ikon sosial media
+            widget: list
+            summary: "{{fields.icon}}"
+            fields:
+              - { name: icon, label: Ikon, widget: select, options: [instagram, tiktok, facebook, mail] }
+              - { name: url, label: URL, widget: string }
+
+      # -------------------------------------------------------------- Education
+      - name: education
+        label: Education & Training
+        file: data/education.json
+        format: json
+        fields:
+          - { name: education_title, label: Judul Education, widget: string }
+          - name: education
+            label: Pendidikan
+            widget: list
+            summary: "{{fields.period}}"
+            fields:
+              - { name: period, label: Waktu, widget: string }
+              - { name: text, label: Keterangan (Enter = baris baru), widget: text }
+          - { name: training_title, label: Judul Training, widget: string }
+          - name: training
+            label: Pelatihan
+            widget: list
+            summary: "{{fields.period}} — {{fields.text}}"
+            fields:
+              - { name: period, label: Waktu, widget: string }
+              - { name: text, label: Keterangan, widget: text }
+          - name: photo_left
+            label: Foto kiri
+            widget: object
+            fields:
+              - { name: src, label: Foto, widget: image }
+              - { name: alt, label: Deskripsi, widget: string, required: false }
+              - { name: pos, label: Posisi fokus, widget: string, required: false }
+          - name: photo_right
+            label: Foto kanan
+            widget: object
+            fields:
+              - { name: src, label: Foto, widget: image }
+              - { name: alt, label: Deskripsi, widget: string, required: false }
+              - { name: pos, label: Posisi fokus, widget: string, required: false }
+
+      # ------------------------------------------------------- Motto & Parents
+      - name: motto
+        label: Motto & Orang Tua
+        file: data/motto.json
+        format: json
+        fields:
+          - name: motto
+            label: Motto
+            widget: object
+            fields:
+              - { name: title, label: Judul, widget: string }
+              - name: photo
+                label: Foto
+                widget: object
+                fields:
+                  - { name: src, label: Foto, widget: image }
+                  - { name: alt, label: Deskripsi, widget: string, required: false }
+                  - { name: pos, label: Posisi fokus, widget: string, required: false }
+              - { name: quote, label: Kutipan, widget: string }
+              - { name: translation, label: Terjemahan, widget: string, required: false }
+              - { name: paragraphs, label: Paragraf, widget: list, field: { name: p, label: Paragraf, widget: text } }
+              - { name: signature, label: Tanda tangan, widget: string, required: false }
+          - name: parents
+            label: Orang Tua
+            widget: object
+            fields:
+              - { name: title, label: Judul, widget: string }
+              - { name: letter, label: "Paragraf surat (**tebal** dan Enter didukung)", widget: list, field: { name: p, label: Paragraf, widget: text } }
+              - { name: ending, label: Kalimat penutup, widget: text, required: false }
+              - name: people
+                label: Foto & nama
+                widget: list
+                summary: "{{fields.role}} — {{fields.name}}"
+                fields:
+                  - { name: role, label: Sebutan (Papa/Mama), widget: string }
+                  - { name: name, label: Nama, widget: string }
+                  - name: photo
+                    label: Foto
+                    widget: object
+                    fields:
+                      - { name: src, label: Foto, widget: image }
+                      - { name: alt, label: Deskripsi, widget: string, required: false }
+                      - { name: pos, label: Posisi fokus, widget: string, required: false }
+
+      # ----------------------------------------------------------- Achievements
+      - name: achievements
+        label: Achievements
+        file: data/achievements.json
+        format: json
+        fields:
+          - { name: title, label: Judul, widget: string }
+          - { name: intro, label: Pengantar, widget: text }
+          - { name: tags, label: Tag di header, widget: list, field: { name: tag, label: Tag, widget: string } }
+          - name: cards
+            label: Kartu sorotan
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - name: photo
+                label: Foto
+                widget: object
+                fields:
+                  - { name: src, label: Foto, widget: image }
+                  - { name: alt, label: Deskripsi, widget: string, required: false }
+                  - { name: pos, label: Posisi fokus, widget: string, required: false }
+              - { name: title, label: Judul, widget: string }
+              - { name: subtitle, label: Subjudul, widget: string }
+              - { name: tags, label: Tag, widget: list, field: { name: tag, label: Tag, widget: string } }
+          - name: rows
+            label: Tabel prestasi lengkap
+            widget: list
+            summary: "{{fields.year}} — {{fields.achievement}}"
+            fields:
+              - { name: year, label: Tahun, widget: string }
+              - { name: achievement, label: Prestasi, widget: string }
+              - { name: result, label: Hasil, widget: string }
+              - { name: organizer, label: Penyelenggara, widget: string }
+              - { name: level, label: Tingkat, widget: string }
+              - { name: category, label: Kategori filter, widget: select, options: [writing, ambassador, religious, academic, creative] }
+          - name: publications
+            label: Publikasi
+            widget: list
+            summary: "{{fields.kind}}"
+            fields:
+              - { name: kind, label: Tahun · Jenis, widget: string }
+              - { name: text, label: Judul / keterangan, widget: text }
+
+      # ----------------------------------------------------------- Organization
+      - name: organization
+        label: Organization
+        file: data/organization.json
+        format: json
+        fields:
+          - { name: title, label: Judul, widget: string }
+          - name: steps
+            label: Langkah organisasi
+            widget: list
+            summary: "{{fields.role}}"
+            fields:
+              - { name: label, label: "Label (mis. Step one · 2025 · Active)", widget: string }
+              - { name: role, label: Jabatan, widget: string }
+              - { name: place, label: Organisasi, widget: string }
+          - { name: committee_title, label: Judul kepanitiaan, widget: string }
+          - { name: committees, label: Kepanitiaan, widget: list, field: { name: c, label: Kepanitiaan, widget: string } }
+          - name: photo
+            label: Foto
+            widget: object
+            fields:
+              - { name: src, label: Foto, widget: image }
+              - { name: alt, label: Deskripsi, widget: string, required: false }
+              - { name: pos, label: Posisi fokus, widget: string, required: false }
+
+      # --------------------------------------------- Professional English Class
+      - name: english
+        label: Professional English Class
+        file: data/english.json
+        format: json
+        fields:
+          - { name: kicker, label: Teks kecil di atas judul, widget: string }
+          - { name: title, label: Judul section (Enter = baris baru), widget: text }
+          - { name: intro, label: Paragraf pengantar, widget: text }
+          - name: items
+            label: Assignment
+            label_singular: assignment
+            widget: list
+            summary: "{{fields.label}} — {{fields.title}}"
+            fields:
+              - { name: type, label: Jenis, widget: select, options: [Video, PDF, Link, Text] }
+              - { name: label, label: "Label (mis. Assignment 3)", widget: string }
+              - { name: title, label: Judul, widget: string }
+              - { name: description, label: Deskripsi, widget: text }
+              - { name: points, label: Poin-poin (opsional), widget: list, required: false, field: { name: point, label: Poin, widget: string } }
+              - { name: video_url, label: Link video Google Drive (opsional), widget: string, required: false }
+              - { name: video_cover_title, label: Judul cover video, widget: string, required: false }
+              - { name: video_cover_subtitle, label: Subjudul cover video, widget: string, required: false }
+              - { name: pdf, label: File PDF (opsional - upload), widget: file, required: false, media_folder: /asset/docs, public_folder: /asset/docs }
+              - name: links
+                label: Tombol link tambahan (opsional)
+                widget: list
+                required: false
+                fields:
+                  - { name: label, label: Teks tombol, widget: string }
+                  - { name: url, label: URL, widget: string }
+              - name: excerpt
+                label: Cuplikan surat/teks (opsional)
+                widget: object
+                required: false
+                fields:
+                  - { name: label, label: Label cuplikan, widget: string, required: false }
+                  - { name: subject, label: Subjek, widget: string, required: false }
+                  - { name: greeting, label: Salam (**tebal** didukung), widget: string, required: false }
+                  - { name: body, label: Paragraf isi, widget: list, required: false, field: { name: paragraph, label: Paragraf, widget: text } }
+                  - { name: signoff, label: Penutup (Enter = baris baru), widget: text, required: false }
+
+      # ------------------------------------------------------------ Social Media
+      - name: social
+        label: Social Media
+        file: data/social.json
+        format: json
+        fields:
+          - { name: title, label: Judul, widget: string }
+          - { name: text, label: Teks, widget: text }
+          - name: phone_a
+            label: Foto HP kiri
+            widget: object
+            fields:
+              - { name: src, label: Foto, widget: image }
+              - { name: pos, label: Posisi fokus, widget: string, required: false }
+          - name: phone_b
+            label: Foto HP kanan
+            widget: object
+            fields:
+              - { name: src, label: Foto, widget: image }
+              - { name: pos, label: Posisi fokus, widget: string, required: false }
+          - name: laptop
+            label: Foto laptop
+            widget: object
+            fields:
+              - { name: src, label: Foto, widget: image }
+              - { name: pos, label: Posisi fokus, widget: string, required: false }
+          - name: links
+            label: Tombol link
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - { name: icon, label: Ikon, widget: select, options: [instagram, tiktok, facebook, mail] }
+              - { name: label, label: Teks, widget: string }
+              - { name: url, label: URL, widget: string }
+
+      # ---------------------------------------------------------------- Gallery
+      - name: gallery
+        label: Gallery
+        file: data/gallery.json
+        format: json
+        fields:
+          - { name: title, label: Judul, widget: string }
+          - name: items
+            label: Foto galeri
+            widget: list
+            summary: "{{fields.caption}}"
+            fields:
+              - { name: src, label: Foto, widget: image }
+              - { name: alt, label: Deskripsi foto, widget: string, required: false }
+              - { name: pos, label: Posisi fokus, widget: string, required: false }
+              - { name: caption, label: Keterangan, widget: string }
+
+      # -------------------------------------------------------------- Watchlist
+      - name: watchlist
+        label: My Watchlist
+        file: data/watchlist.json
+        format: json
+        fields:
+          - { name: title, label: Judul, widget: string }
+          - { name: text, label: Teks, widget: text }
+          - name: items
+            label: Video YouTube
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: url, label: Link YouTube, widget: string }
+              - { name: tag, label: Kategori, widget: string }
+              - { name: title, label: Judul, widget: string }
+              - { name: channel, label: Nama channel, widget: string }
+
+      # ---------------------------------------------------------------- Contact
+      - name: contact
+        label: Contact
+        file: data/contact.json
+        format: json
+        fields:
+          - { name: title, label: Judul, widget: string }
+          - name: banner
+            label: Foto banner
+            widget: object
+            fields:
+              - { name: src, label: Foto, widget: image }
+              - { name: alt, label: Deskripsi, widget: string, required: false }
+              - { name: pos, label: Posisi fokus, widget: string, required: false }
+          - name: items
+            label: Daftar kontak
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - { name: icon, label: Ikon, widget: select, options: [mail, pin, instagram, tiktok, facebook] }
+              - { name: label, label: Label, widget: string }
+              - name: entries
+                label: Isi (boleh lebih dari satu)
+                widget: list
+                fields:
+                  - { name: text, label: Teks, widget: string }
+                  - { name: url, label: Link (opsional), widget: string, required: false }

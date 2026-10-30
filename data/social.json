@@ -1,0 +1,41 @@
+{
+  "title": "Social Media",
+  "text": "Follow along for events, recitations, writing and everyday moments.",
+  "phone_a": {
+    "src": "/asset/photo/port-mc.jpg",
+    "alt": "",
+    "pos": "50% 15%"
+  },
+  "phone_b": {
+    "src": "/asset/photo/port-tilawah.jpg",
+    "alt": "",
+    "pos": "50% 35%"
+  },
+  "laptop": {
+    "src": "/asset/photo/duta-edukasi.jpg",
+    "alt": "",
+    "pos": "62% 30%"
+  },
+  "links": [
+    {
+      "icon": "instagram",
+      "label": "@septia_q2",
+      "url": "https://www.instagram.com/septia_q2/"
+    },
+    {
+      "icon": "instagram",
+      "label": "@septianenengsih",
+      "url": "https://www.instagram.com/septianenengsih/"
+    },
+    {
+      "icon": "tiktok",
+      "label": "@ceptiiiii7",
+      "url": "https://www.tiktok.com/@ceptiiiii7"
+    },
+    {
+      "icon": "facebook",
+      "label": "Facebook",
+      "url": "https://www.facebook.com/septiai.ruslin"
+    }
+  ]
+}

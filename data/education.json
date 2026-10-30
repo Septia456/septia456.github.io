@@ -1,0 +1,58 @@
+{
+  "education_title": "Education",
+  "education": [
+    {
+      "period": "2023 – now",
+      "text": "Universitas Ahmad Dahlan\nInformatics, Faculty of Industrial Technology"
+    },
+    {
+      "period": "2020 – 2023",
+      "text": "SMA Negeri 1 Donggo"
+    },
+    {
+      "period": "2017 – 2020",
+      "text": "SMP Negeri 1 Donggo"
+    },
+    {
+      "period": "until 2017",
+      "text": "SD Negeri Inpres O,o"
+    }
+  ],
+  "training_title": "Training",
+  "training": [
+    {
+      "period": "Jun 2025",
+      "text": "Photography training · UKM Lensa UAD"
+    },
+    {
+      "period": "Feb 2025",
+      "text": "Creative video training · BIMAWA UAD"
+    },
+    {
+      "period": "Jun 2024",
+      "text": "Adobe Photoshop design training · BEM FSBK UHAMKA"
+    },
+    {
+      "period": "Apr 2024",
+      "text": "Upgrading Ormawa FTI · BEM FTI UAD"
+    },
+    {
+      "period": "Jan 2024",
+      "text": "Soft skill training · Universitas Ahmad Dahlan"
+    },
+    {
+      "period": "Oct 2023",
+      "text": "PARADOKS, basic informatics organization training · HMIF UAD"
+    }
+  ],
+  "photo_left": {
+    "src": "/asset/photo/gerak-jalan.jpg",
+    "alt": "Septia with classmates in scout uniforms at Gerak Jalan Indah 2022",
+    "pos": "50% 6%"
+  },
+  "photo_right": {
+    "src": "/asset/photo/spiritual-camp.jpg",
+    "alt": "Septia and friends at the SMAN 1 Donggo Spiritual Camp 2022",
+    "pos": "50% 50%"
+  }
+}

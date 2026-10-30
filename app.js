@@ -1,7 +1,7 @@
 // Septia Nenengsih — Portofolio
 document.documentElement.classList.add("js");
 
-(function () {
+(window.siteReady || Promise.resolve()).then(function () {
   var root = document.documentElement;
   var reduceMotion =
     window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -266,17 +266,17 @@ document.documentElement.classList.add("js");
   });
 
   // ---- English class: load the Google Drive player on click --------
-  document.querySelectorAll(".eng-video[data-drive]").forEach(function (box) {
-    var btn = box.querySelector(".eng-play");
-    if (!btn) return;
-    btn.addEventListener("click", function () {
-      var frame = document.createElement("iframe");
-      frame.src = "https://drive.google.com/file/d/" + box.dataset.drive + "/preview";
-      frame.title = "Self-introduction video";
-      frame.allow = "autoplay; fullscreen";
-      frame.allowFullscreen = true;
-      box.appendChild(frame);
-      btn.remove();
-    });
+  // (delegated: the list is re-rendered from data/english.json by english.js)
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest && e.target.closest(".eng-play");
+    var box = btn && btn.closest(".eng-video[data-drive]");
+    if (!box) return;
+    var frame = document.createElement("iframe");
+    frame.src = "https://drive.google.com/file/d/" + box.dataset.drive + "/preview";
+    frame.title = box.dataset.title || "Self-introduction video";
+    frame.allow = "autoplay; fullscreen";
+    frame.allowFullscreen = true;
+    box.appendChild(frame);
+    btn.remove();
   });
-})();
+});

@@ -1,0 +1,47 @@
+{
+  "welcome": {
+    "image": "/asset/photo/hero-welcome.jpg",
+    "image_alt": "Septia Nenengsih in batik, holding a microphone and the Student Mobility programme booklet",
+    "kicker": "Assalamu'alaikum & hello there",
+    "title": "Welcome",
+    "sub": "to the portofolio of",
+    "name": "Septia Nenengsih",
+    "words": [
+      "an Informatics student",
+      "a writer",
+      "a Master of Ceremony",
+      "a journalist",
+      "an education ambassador"
+    ]
+  },
+  "hero": {
+    "images": [
+      {
+        "src": "/asset/photo/port-mc.jpg",
+        "alt": "Septia as a Master of Ceremony",
+        "pos": "50% 8%"
+      },
+      {
+        "src": "/asset/photo/traditional-attire.jpg",
+        "alt": "Septia in traditional attire with friends",
+        "pos": "40% 35%"
+      },
+      {
+        "src": "/asset/photo/duta-muslimah.jpg",
+        "alt": "Septia wearing a Duta Muslimah Hijab sash",
+        "pos": "50% 14%"
+      },
+      {
+        "src": "/asset/photo/port-tilawah.jpg",
+        "alt": "Septia holding a tilawah certificate",
+        "pos": "50% 48%"
+      }
+    ],
+    "title": "Portofolio",
+    "name": "SEPTIA NENENGSIH",
+    "tagline": "INFORMATICS STUDENT · WRITER · MC",
+    "button": "Take a look at my journey",
+    "button_link": "#about"
+  },
+  "footer": "© 2026 Septia Nenengsih · Made with 💌 by Sazmi (Septia & Azmi)"
+}

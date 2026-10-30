@@ -1,0 +1,37 @@
+{
+  "title": "Organization",
+  "steps": [
+    {
+      "label": "Step one · 2025 · Active",
+      "role": "Journalist",
+      "place": "Humas & Protokol UAD (university level)"
+    },
+    {
+      "label": "Step two · 2025 · Active",
+      "role": "Media & Communication Coordinator (KOMINFO)",
+      "place": "Forum Silaturahmi Mahasiswa Donggo (FOSMAD) Bima–Yogyakarta"
+    },
+    {
+      "label": "Step three · 2024/2025 · Active",
+      "role": "Staff, Advocacy & Strategic Studies (Akastrat)",
+      "place": "Himpunan Mahasiswa Informatika (HMIF) UAD, and Permikomnas (national, Yogyakarta)"
+    },
+    {
+      "label": "Step four · 2023",
+      "role": "Committee Chair",
+      "place": "Kongres KBM Informatika (study program level)"
+    }
+  ],
+  "committee_title": "Committees · 2024",
+  "committees": [
+    "Business Plan Competition #2 · event staff",
+    "Kegiatan Menarik S3 · event staff",
+    "ICOM Informatics Competition · event staff",
+    "P2K UAD · mentor"
+  ],
+  "photo": {
+    "src": "/asset/photo/traditional-attire.jpg",
+    "alt": "Septia with five friends in traditional black and gold attire",
+    "pos": "38% 40%"
+  }
+}

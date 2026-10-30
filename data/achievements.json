@@ -1,0 +1,171 @@
+{
+  "title": "Achievements",
+  "intro": "From national essay stages to ambassador programs and Qur'an recitation — a few highlights, and the full list below.",
+  "tags": [
+    "Writing",
+    "Ambassador",
+    "Religious",
+    "Academic"
+  ],
+  "cards": [
+    {
+      "photo": {
+        "src": "/asset/photo/port-essay.jpg",
+        "alt": "Poster announcing Septia as national essay winner",
+        "pos": "50% 30%"
+      },
+      "title": "National Essay Writing — 1st Place",
+      "subtitle": "Hari Pahlawan essay contest · Menyapa Rindu Publisher · 2024",
+      "tags": [
+        "Writing",
+        "National"
+      ]
+    },
+    {
+      "photo": {
+        "src": "/asset/photo/duta-muslimah.jpg",
+        "alt": "Septia wearing a Duta Muslimah Hijab sash",
+        "pos": "50% 12%"
+      },
+      "title": "Duta Muslimah Hijab — Hijab Syar'i",
+      "subtitle": "Representing Nusa Tenggara Barat · National · 2025",
+      "tags": [
+        "Ambassador",
+        "National"
+      ]
+    },
+    {
+      "photo": {
+        "src": "/asset/photo/duta-edukasi.jpg",
+        "alt": "Septia wearing a Duta Edukasi Indonesia sash",
+        "pos": "62% 25%"
+      },
+      "title": "Duta Edukasi Indonesia — Best 1 Instagram",
+      "subtitle": "Representing Nusa Tenggara Barat · National · 2025",
+      "tags": [
+        "Ambassador",
+        "National"
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "category": "ambassador",
+      "year": "2025",
+      "achievement": "Duta Muslimah Hijab (NTB representative)",
+      "result": "Hijab Syar'i category",
+      "organizer": "Duta Muslimah Hijab Since",
+      "level": "National"
+    },
+    {
+      "category": "ambassador",
+      "year": "2025",
+      "achievement": "Duta Edukasi Indonesia (NTB representative)",
+      "result": "Best 1 Instagram · Best 2 TikTok · Best 3 YouTube · Best 3 Duta of the Month",
+      "organizer": "Duta Edukasi_ID",
+      "level": "National"
+    },
+    {
+      "category": "writing",
+      "year": "2025",
+      "achievement": "Poetry writing contest batch #4, “Jejak Rindu di Bait Kata” (published in a book)",
+      "result": "Selected author",
+      "organizer": "Halo Penyair",
+      "level": "National"
+    },
+    {
+      "category": "creative",
+      "year": "2025",
+      "achievement": "Poster competition",
+      "result": "Participant",
+      "organizer": "Duta Inspirasi Library",
+      "level": "National"
+    },
+    {
+      "category": "writing",
+      "year": "2024",
+      "achievement": "Essay writing for Hari Pahlawan (Heroes' Day)",
+      "result": "1st Place",
+      "organizer": "Menyapa Rindu Publisher",
+      "level": "National"
+    },
+    {
+      "category": "religious",
+      "year": "2024",
+      "achievement": "Tilawah competition",
+      "result": "1st Place",
+      "organizer": "Social & Religious Dept., HMIF FTI UAD",
+      "level": "Study program"
+    },
+    {
+      "category": "academic",
+      "year": "2023",
+      "achievement": "Indonesian Science Olympiad",
+      "result": "Gold medal Biology · Bronze medal Civics",
+      "organizer": "Indonesian Sains Olympiad",
+      "level": "National"
+    },
+    {
+      "category": "writing",
+      "year": "2023",
+      "achievement": "Reading & writing literacy movement",
+      "result": "Best 1",
+      "organizer": "SMAN 1 Donggo",
+      "level": "School"
+    },
+    {
+      "category": "academic",
+      "year": "2022",
+      "achievement": "Scientific writing contest, Mahandraga Geological Event",
+      "result": "3rd Place",
+      "organizer": "Universitas Muhammadiyah Jember",
+      "level": "National"
+    },
+    {
+      "category": "writing",
+      "year": "2022",
+      "achievement": "Essay & opinion, NTB Gemilang flagship program (“Pesona Destinasi Wisata Kampoeng La Hila”)",
+      "result": "1st Place",
+      "organizer": "Provincial Government of NTB",
+      "level": "Province (NTB)"
+    },
+    {
+      "category": "religious",
+      "year": "2020",
+      "achievement": "Religious sermon (ceramah) contest",
+      "result": "1st Place",
+      "organizer": "SMAN 1 Donggo",
+      "level": "Sub-district"
+    },
+    {
+      "category": "religious",
+      "year": "2020",
+      "achievement": "Tilawatil Qur'an",
+      "result": "1st Place",
+      "organizer": "SMAN 1 Donggo",
+      "level": "School"
+    },
+    {
+      "category": "religious",
+      "year": "2020",
+      "achievement": "Hafidz Qur'an (1 juz)",
+      "result": "2nd Place",
+      "organizer": "SMAN 1 Donggo",
+      "level": "School"
+    }
+  ],
+  "publications": [
+    {
+      "kind": "2023 · Essay",
+      "text": "“Pesona Destinasi Wisata Kampoeng La Hila sebagai Warisan Budaya Mewujudkan NTB Berwisata Global” — Universitas Mataram"
+    },
+    {
+      "kind": "2023 · Book chapter",
+      "text": "“Kumpulan Puisi Anak SD” — SMAN 1 Donggo"
+    },
+    {
+      "kind": "2021 · Journal",
+      "text": "The effect of project-based Scratch learning media on Grade X students' learning outcomes (circular motion) — Universitas Muhammadiyah Mataram"
+    }
+  ]
+}
