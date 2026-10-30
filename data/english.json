@@ -37,6 +37,71 @@
         ],
         "signoff": "Sincerely,\nSeptia Nenengsih"
       }
+    },
+    {
+      "type": "Research",
+      "label": "Assignment 3",
+      "title": "Finding Journals on an Informatics Topic",
+      "description": "A group assignment: each member chose one informatics topic and collected five journal articles with English abstract summaries and links. My topic is recommender systems: content-based filtering with TF-IDF and cosine similarity.",
+      "points": [],
+      "links": [],
+      "journals_label": "My topic · Recommender systems",
+      "journals": [
+        {
+          "title": "Implementation of Content-Based Filtering in a Library Book Recommendation System",
+          "source": "Reswara, Evanita & Susanto (2025) · JATI 9(2), 3243–3250",
+          "url": "https://ejournal.itn.ac.id/jati/article/view/13312",
+          "pdf": "https://ejournal.itn.ac.id/jati/article/download/13312/7396",
+          "doi": "10.36040/jati.v9i2.13312"
+        },
+        {
+          "title": "Movie Recommendation System Using the Content-Based Filtering Method",
+          "source": "Velamentosa & Zuliarso (2025) · JATI 9(2), 2918–2922",
+          "url": "https://ejournal.itn.ac.id/jati/article/view/13251",
+          "pdf": "https://ejournal.itn.ac.id/jati/article/download/13251/7349",
+          "doi": "10.36040/jati.v9i2.13251"
+        },
+        {
+          "title": "Movie Recommendation System on Streaming Platforms Using the Content-Based Filtering Method",
+          "source": "Azri Saputra et al. (2024) · Jurnal Transformatika 22(1), 10–21",
+          "url": "https://journals.usm.ac.id/index.php/transformatika/article/view/7041",
+          "pdf": "https://journals.usm.ac.id/index.php/transformatika/article/download/7041/4388",
+          "doi": "10.26623/transformatika.v22i1.7041"
+        },
+        {
+          "title": "Content-based Filtering for Improving Movie Recommender System",
+          "source": "Tian (2024) · Proceedings of DAI 2023, Atlantis Press, 598–609",
+          "url": "https://www.atlantis-press.com/proceedings/dai-23/125998090",
+          "pdf": "https://www.atlantis-press.com/article/125998090.pdf",
+          "doi": "10.2991/978-94-6463-370-2_61"
+        },
+        {
+          "title": "An Analytical Review of Content-Based and Collaborative Filtering in Recommender Systems",
+          "source": "Shevchenko (2025) · Advanced Information Technology 1(4), 54–66",
+          "url": "https://doi.org/10.17721/AIT.2025.1.07",
+          "pdf": "https://ait.knu.ua/article/download/9137/8133",
+          "doi": "10.17721/AIT.2025.1.07"
+        }
+      ]
+    },
+    {
+      "type": "PDF",
+      "label": "Assignment 4",
+      "title": "Curriculum Vitae",
+      "description": "My CV written in English: profile, education, organizational experience, skills, achievements and publications, presented for a web and AI developer role.",
+      "points": [
+        "Profile & technical skills",
+        "Education & organizational experience",
+        "Achievements & awards",
+        "Publications"
+      ],
+      "pdf": "/asset/docs/Septia_Nenengsih_CV.pdf",
+      "links": [],
+      "preview": {
+        "src": "/asset/img/cv-preview.jpg",
+        "alt": "First page of Septia Nenengsih's curriculum vitae",
+        "label": "Curriculum Vitae · 3 pages"
+      }
     }
   ]
 }
