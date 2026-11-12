@@ -2523,3 +2523,89 @@ a.motto-cv:hover {
     padding: 28px 18px 18px;
   }
 }
+
+
+/* ---------------------------------------------------------
+   English class: video cards that open Google Drive directly
+   --------------------------------------------------------- */
+.eng-video-link {
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  text-decoration: none;
+  background: url("asset/img/squared-paper.jpg") center / cover;
+  cursor: pointer;
+}
+
+.eng-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.eng-video-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0.12), rgba(17, 17, 17, 0.5));
+  pointer-events: none;
+}
+
+.eng-video-link .eng-play-card,
+.eng-video-link .eng-play-btn,
+.eng-video-link .eng-video-hint {
+  z-index: 2;
+}
+
+.eng-video-hint {
+  position: absolute;
+  left: 20px;
+  bottom: 24px;
+  padding: 6px 12px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: rgba(17, 17, 17, 0.78);
+}
+
+.eng-video-link:hover .eng-poster,
+.eng-video-link:focus-visible .eng-poster {
+  transform: scale(1.04);
+}
+
+.eng-video-link:hover .eng-play-btn,
+.eng-video-link:focus-visible .eng-play-btn {
+  transform: scale(1.12);
+}
+
+.eng-video-link:hover .eng-play-card {
+  transform: rotate(0deg) scale(1.03);
+}
+
+/* midterm exam divider */
+.eng-subhead {
+  padding: 48px 0 0;
+  border-top: 2px solid var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.4vw, 1.8rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.eng-subhead + .eng-item {
+  padding-top: 24px;
+  border-top: 0;
+}
+
+@media (max-width: 560px) {
+  .eng-video-hint {
+    left: 12px;
+    bottom: 16px;
+    font-size: 0.6rem;
+  }
+}
