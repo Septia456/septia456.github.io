@@ -290,6 +290,7 @@
 
     var list = clear($(".eng-list", sec));
     (d.items || []).filter(function (i) { return i && i.title; }).forEach(function (item, index) {
+      if (item.section) list.appendChild(h("li", "eng-subhead", h("span", null, item.section), { "aria-hidden": "true" }));
       var li = h("li", "eng-item");
       li.appendChild(
         h("div", "eng-meta", [
@@ -321,14 +322,18 @@
       body.appendChild(text);
 
       if (vid) {
-        var box = h("div", "eng-video", null, { "data-drive": vid, "data-title": item.title });
+        // video card: poster from Drive + click opens the file on Drive directly
+        var poster = h("img", "eng-poster", null, { src: "https://drive.google.com/thumbnail?id=" + vid + "&sz=w1280", alt: "", loading: "lazy", referrerpolicy: "no-referrer" });
+        poster.addEventListener("error", function () { poster.remove(); });
         var card = h("span", "eng-play-card", [item.video_cover_title || "Play", item.video_cover_subtitle ? h("small", null, item.video_cover_subtitle) : null]);
-        var btn = h("button", "eng-play", [card, h("span", "eng-play-btn", icon("i-play"))], {
-          type: "button",
-          "aria-label": "Play the video: " + item.title
-        });
-        box.appendChild(btn);
-        body.appendChild(box);
+        body.appendChild(
+          h("a", "eng-video eng-video-link", [poster, card, h("span", "eng-video-hint", "Watch on Google Drive"), h("span", "eng-play-btn", icon("i-play"))], {
+            href: "https://drive.google.com/file/d/" + vid + "/view",
+            target: "_blank",
+            rel: "noopener",
+            "aria-label": "Watch the video on Google Drive: " + item.title
+          })
+        );
       } else if (item.excerpt && (item.excerpt.body || []).length) {
         var ex = item.excerpt;
         var letter = h("div", "letter", null, { lang: "en" });
@@ -351,7 +356,7 @@
       } else if (item.preview && safeUrl(item.preview.src)) {
         var pv = item.preview;
         var frame = h("a", "eng-doc", [img({ src: pv.src, alt: pv.alt || item.title, pos: "50% 0%" }, true), pv.label ? h("span", "eng-doc-label", pv.label) : null], {
-          href: safeUrl(item.pdf) || safeUrl(pv.src),
+          href: safeUrl(pv.url) || safeUrl(item.pdf) || safeUrl(pv.src),
           target: "_blank",
           rel: "noopener",
           "aria-label": "Open " + item.title
