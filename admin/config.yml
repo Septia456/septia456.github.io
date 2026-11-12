@@ -245,6 +245,7 @@ collections:
             summary: "{{fields.label}} — {{fields.title}}"
             fields:
               - { name: type, label: Jenis, widget: select, options: [Video, PDF, Research, Link, Text] }
+              - { name: section, label: "Judul pembatas di atas assignment ini (opsional, mis. Midterm Exam)", widget: string, required: false }
               - { name: label, label: "Label (mis. Assignment 3)", widget: string }
               - { name: title, label: Judul, widget: string }
               - { name: description, label: Deskripsi, widget: text }
@@ -290,6 +291,7 @@ collections:
                   - { name: src, label: Gambar, widget: image, media_folder: /asset/img, public_folder: /asset/img }
                   - { name: alt, label: Deskripsi, widget: string, required: false }
                   - { name: label, label: Label di atas gambar, widget: string, required: false }
+                  - { name: url, label: Link saat gambar diklik (opsional), widget: string, required: false }
 
       # ------------------------------------------------------------ Social Media
       - name: social
