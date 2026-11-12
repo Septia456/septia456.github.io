@@ -1,7 +1,7 @@
 {
   "kicker": "Coursework · Class D · Universitas Ahmad Dahlan",
   "title": "Professional\nEnglish Class",
-  "intro": "Assignments from my Professional English course, practising how to introduce myself and communicate clearly and politely in English for real, everyday professional situations.",
+  "intro": "Assignments and midterm exam answers from my Professional English course, practising how to introduce myself and communicate clearly and politely in English for real, everyday professional situations.",
   "items": [
     {
       "type": "Video",
@@ -9,7 +9,7 @@
       "title": "Self-Introduction",
       "description": "A short video in which I introduce myself in English: who I am, where I study, and what I'm passionate about.",
       "points": [],
-      "video_url": "",
+      "video_url": "https://drive.google.com/file/d/1sPAU_FNGLHaIlfIbRGbU6vxymD5GblDk/view",
       "video_cover_title": "Welcome",
       "video_cover_subtitle": "Self-introduction · Septia Nenengsih",
       "links": []
@@ -25,8 +25,11 @@
         "My own experience shopping on Shopee",
         "Advantages and disadvantages of online shopping"
       ],
-      "pdf": "/asset/docs/english-assignment-2-online-shopping.pdf",
       "links": [
+        {
+          "label": "Open in Google Drive",
+          "url": "https://drive.google.com/file/d/122ITTju4THtsNh1-Vwbnneb3gmrSYhf-/view"
+        },
         {
           "label": "Source article",
           "url": "https://databoks.katadata.co.id/en/technology-telecommunications/statistics/6aace86042cdb/shopee-becomes-the-most-popular-e-commerce-platform-used-by-indonesians-in-2026"
@@ -50,7 +53,12 @@
       "title": "Finding Journals on an Informatics Topic",
       "description": "A group assignment: each member chose one informatics topic and collected five journal articles with English abstract summaries and links. My topic is recommender systems: content-based filtering with TF-IDF and cosine similarity.",
       "points": [],
-      "links": [],
+      "links": [
+        {
+          "label": "Open journal list in Google Drive",
+          "url": "https://drive.google.com/file/d/1lNX7SOM9FL6tEkyx11lan6909wv3JDw6/view"
+        }
+      ],
       "journals_label": "My topic · Recommender systems",
       "journals": [
         {
@@ -101,13 +109,58 @@
         "Achievements & awards",
         "Publications"
       ],
-      "pdf": "/asset/docs/Septia_Nenengsih_CV.pdf",
-      "links": [],
+      "links": [
+        {
+          "label": "Open in Google Drive",
+          "url": "https://drive.google.com/file/d/1DZxYBLU_1PtnxJO6hVmKtasyGqsLmqQe/view"
+        }
+      ],
       "preview": {
         "src": "/asset/img/cv-preview.jpg",
         "alt": "First page of Septia Nenengsih's curriculum vitae",
-        "label": "Curriculum Vitae · 3 pages"
+        "label": "Curriculum Vitae · 3 pages",
+        "url": "https://drive.google.com/file/d/1DZxYBLU_1PtnxJO6hVmKtasyGqsLmqQe/view"
       }
+    },
+    {
+      "section": "Midterm Exam · Gasal 2026/2027",
+      "type": "UTS",
+      "label": "Midterm · Part A",
+      "title": "Job Application Letter",
+      "description": "My midterm answer for Part A: a formal application letter for the Junior CRM and Data Analyst position at TechNova Digital Solutions, built on my fundraising internship at Lazismu DIY.",
+      "points": [
+        "Technical skills: Python, PHP, Laravel, Excel",
+        "CRM data management and donation records",
+        "Excel data cleaning of thousands of donation entries",
+        "Event experience as photographer, poster editor and MC"
+      ],
+      "links": [
+        {
+          "label": "Open in Google Drive",
+          "url": "https://drive.google.com/file/d/11LZmSNl5Du7td6-yzNVQaOrwKA4NOB_I/view"
+        }
+      ],
+      "excerpt": {
+        "label": "Excerpt · My letter",
+        "subject": "Subject: Application for the Position of Junior CRM and Data Analyst",
+        "greeting": "",
+        "body": [
+          "I am writing to apply for the position of Junior CRM and Data Analyst at TechNova Digital Solutions. I am a seventh-semester Informatics student at Universitas Ahmad Dahlan, Yogyakarta, with a strong interest in business data and information systems.",
+          "Most importantly, I am eager to keep learning and growing professionally."
+        ],
+        "signoff": ""
+      }
+    },
+    {
+      "type": "UTS",
+      "label": "Midterm · Part B",
+      "title": "Three-Minute Video Presentation",
+      "description": "My midterm answer for Part B: a three-minute video in English that accompanies my application letter for the TechNova Digital Solutions position.",
+      "points": [],
+      "video_url": "https://drive.google.com/file/d/1tqNRRvfNp65uSL2gaGN1hh3PkexYJOQw/view",
+      "video_cover_title": "Midterm",
+      "video_cover_subtitle": "Video presentation · Septia Nenengsih",
+      "links": []
     }
   ]
 }
